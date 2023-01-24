@@ -24,8 +24,8 @@ renamelog = logging.getLogger(__name__)
 class RenameManeuver(DefaultManeuver):
     def __init__(self, client: Client, media_message: Message, cmd_message: Message) -> None:
         super().__init__(client, media_message, cmd_message)
-        self._unique_id = int(str(cmd_message.chat.id)
-        
+        self._unique_id = int(str(cmd_message.chat.id))
+        self._fltr_obj = FilterUtils(cmd_message.from_user.id)
     async def execute(self) -> None:
         self._execute_pending = False
 
@@ -35,7 +35,7 @@ class RenameManeuver(DefaultManeuver):
         elif not self._media_message.media:
             await self._cmd_message.reply_text(Trans.REPLY_TO_MEDIA, quote=True)
             return
-        
+    
         self._media_message.from_user = self._cmd_message.from_user
 
         is_video = False
