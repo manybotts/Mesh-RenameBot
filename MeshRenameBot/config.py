@@ -7,7 +7,7 @@ except ImportError:
         DATABASE_URL = [str, "mongodb+srv://tron:tron@cluster0.xs0gvih.mongodb.net/?retryWrites=true&w=majority"]
         API_HASH = [str, "fdafb41f9a67f40e34a6c67f47730a92"]
         API_ID = [int, 5166878]
-        BOT_TOKEN = [str, "5819824799:AAHzJoDiqDzniXtNpNDo3emgj2GiPJnVefE")
+        BOT_TOKEN = [str, "5819824799:AAHzJoDiqDzniXtNpNDo3emgj2GiPJnVefE"]
 
 
         COMPLETED_STR = [str, "▰"]
