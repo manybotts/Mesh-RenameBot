@@ -23,7 +23,7 @@ except ImportError:
 
         # Public username url or invite link of private chat
         FORCEJOIN = [str,""]
-        FORCEJOIN_ID = [int,-1001887793636]
+        FORCEJOIN_ID = [int, 0]
 
         TRACE_CHANNEL = [int, 0]
 
