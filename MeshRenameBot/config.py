@@ -17,15 +17,15 @@ except ImportError:
         IS_MONGO = [bool, True]
 
         # Access Restriction
-        IS_PRIVATE = [bool, False]
-        AUTH_USERS = [list,[]]
+        IS_PRIVATE = [bool, True]
+        AUTH_USERS = [list,[762308466]]
         OWNER_ID = [int, 762308466]
 
         # Public username url or invite link of private chat
         FORCEJOIN = [str,""]
         FORCEJOIN_ID = [int, 0]
 
-        TRACE_CHANNEL = [int, 0]
+        TRACE_CHANNEL = [int, -1001405282390]
 
 try:
     from .tconfig import Commands
